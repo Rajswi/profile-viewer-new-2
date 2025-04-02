@@ -26,7 +26,7 @@ const ProfileCard = ({ profile }) => {
   }, [profile.address]);
 
   return (
-    <div className="border rounded-lg p-4 shadow-lg bg-gray-100 dark:bg-gray-800 dark:text-white w-full">
+    <div className="border rounded-xl p-4 shadow-lg bg-gray-100 dark:bg-gray-800 dark:text-white w-full">
       <img src={profile.image || "/default-avatar.png"} alt={profile.name} className="w-full h-40 object-cover rounded-md"/>
       <h2 className="text-xl font-bold mt-2">{profile.name}</h2>
       <p className="text-sm">{profile.description}</p>
